@@ -5,15 +5,21 @@ using UnityEngine;
 public class SampleFaucet : MonoBehaviour
 {
     public bool fuacetOn = false;
+    private Quaternion handleHome;
+    public Transform handlePos;
 
-
-	void StartWater ()
+    private void Start()
     {
-        if (this.fuacetOn)
+        this.handleHome = this.transform.rotation;
+    }
+
+    void StartWater ()
+    {
+        if (this.handlePos.rotation != this.handleHome)
         {
             this.GetComponent<ParticleSystem>().Play();
         }
-        else
+        else if(this.handlePos.rotation == this.handleHome)
         {
 
             this.GetComponent<ParticleSystem>().Pause();
