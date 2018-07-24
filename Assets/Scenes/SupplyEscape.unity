@@ -4202,6 +4202,7 @@ GameObject:
   - component: {fileID: 601130738}
   - component: {fileID: 601130737}
   - component: {fileID: 601130736}
+  - component: {fileID: 601130740}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -4216,8 +4217,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 601130734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.63, y: -0.436, z: 0.185}
-  m_LocalScale: {x: 0.18, y: 0.13, z: 0.25}
+  m_LocalPosition: {x: 0.481, y: -0.436, z: 0.473}
+  m_LocalScale: {x: 0.18, y: 0.13, z: 0.81}
   m_Children:
   - {fileID: 2050642015}
   m_Father: {fileID: 662617546}
@@ -4237,16 +4238,16 @@ MonoBehaviour:
   grabCondtion: 11
   dropCondition: 0
   throwSensitivity: 1
-  blockMovementWhenGrabbing: 0
+  blockMovementWhenGrabbing: 1
   movementObject: {fileID: 0}
   forceDepthToDistance: 0
   forcedDistance: 1
-  allowClickForDepth: 0
+  allowClickForDepth: 1
   clickDeadzone: 0.4
   clickSensitivity: 1
   minDepthDistance: 0.5
   maxDepthDistance: 20
-  allowSwipeForRotation: 0
+  allowSwipeForRotation: 1
   swipeXSensitivity: 1
   swipeYSensitivity: 1
   collisionsBreakGrab: 0
@@ -4312,6 +4313,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 601130734}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &601130740
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601130734}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 62
+  m_CollisionDetection: 0
 --- !u!1 &601179758
 GameObject:
   m_ObjectHideFlags: 0
@@ -20774,8 +20790,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2050642014}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.26154, z: -0.7400003}
-  m_LocalScale: {x: 0.94444627, y: 6.230773, z: 0.56000024}
+  m_LocalPosition: {x: -0.03333141, y: -2.26154, z: -0.5839507}
+  m_LocalScale: {x: 0.9444482, y: 6.2307796, z: 0.17283973}
   m_Children: []
   m_Father: {fileID: 601130735}
   m_RootOrder: 0
